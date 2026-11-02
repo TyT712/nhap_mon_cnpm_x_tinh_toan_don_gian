@@ -1,22 +1,14 @@
 # tính giai thừa
+def tinhgiaithua(n):
+    if n < 0:
+        return "Không có giai thừa cho số âm."
+    if n==0 or n==1: 
+        return 1
+    ket_qua= 1
+    for i in range (2,n+1):
+        ket_qua += i
+        return ket_qua 
 # kiểm tra số nguyên tố
 # kiếm tra số chẵn lẽ
-def kiemtrachanle(x):
-    if x % 2 == 0:
-        print(x," là số chẵn")
-    else:
-        print(x," là số lẻ")
 # kiêm tra số hoàn hảo
 # tính tổng bình phương tới n
-def kiem_tra_so_hoan_hao(n):
-    # Số hoàn hảo phải là số nguyên dương lớn hơn 1
-    if n <= 1:
-        return False
-    tong_uoc = 0
-    # Duyệt qua các số từ 1 đến n - 1 để tìm các ước số
-    for i in range(1, n):
-        if n % i == 0:
-            tong_uoc += i
-            
-    # Nếu tổng các ước bằng chính n thì đó là số hoàn hảo
-    return tong_uoc == n
