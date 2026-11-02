@@ -1,3 +1,13 @@
+# tính giai thừa
+# kiểm tra số nguyên tố
+# kiếm tra số chẵn lẽ
+def kiemtrachanle(x):
+    if x % 2 == 0:
+        print(x," là số chẵn")
+    else:
+        print(x," là số lẻ")
+# kiêm tra số hoàn hảo
+# tính tổng bình phương tới n
 def kiem_tra_so_hoan_hao(n):
     # Số hoàn hảo phải là số nguyên dương lớn hơn 1
     if n <= 1:
