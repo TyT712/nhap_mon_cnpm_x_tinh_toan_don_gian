@@ -1,4 +1,13 @@
 # tính giai thừa
+def tinh_giai_thuaw(n):
+    if n < 0:
+        return None
+    if n==0 or n==1:
+        return 1
+    ket_qua = 1
+    for i in range (2,n+1):
+        ket_qua *= i
+    return ket_qua
 # kiểm tra số nguyên tố
 def nguyen_to(n):
     if n < 2:
