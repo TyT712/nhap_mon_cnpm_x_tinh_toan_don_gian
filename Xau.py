@@ -33,6 +33,11 @@ s = input("Nhap xau: ")
 print("So tu trong xau la:", dem_tu(s))
 # ---viết hoa chữ cái đầu và viết thường các chữ cái còn lại trong xâu
 # ---kiểm tra xâu đối xung
+s = input("Nhập xâu: ")
+
+s = s[::-1]
+
+print("Xâu đảo ngược là:", s)
 def kiem_tra_doi_xung_2(s):
   s = s.lower().replace(" ", "")
   left = 0
