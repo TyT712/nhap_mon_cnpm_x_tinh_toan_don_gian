@@ -9,6 +9,13 @@ kt = input("Nhập ký tự cần đếm: ")
 ket_qua = dem_ky_tu(xau, kt)
 print("Ký tự", kt, "xuất hiện", ket_qua, "lần")
 # ---đếm số từ trong xâu
+def dem_tu(s):
+    a = s.split()
+    return len(a)
+
+s = input("Nhap xau: ")
+print("So tu trong xau la:", dem_tu(s))
+# ---viết hoa chữ cái đầu và viết thường các chữ cái còn lại trong xâu
 # ---viết hoa chữ cái đầu và viết thường các chữ cái còn lại trong 
 def chuan_hoa_ten(ten: str) -> str:
     danh_sach_tu = ten.split()
