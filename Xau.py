@@ -16,6 +16,19 @@ def dem_tu(s):
 s = input("Nhap xau: ")
 print("So tu trong xau la:", dem_tu(s))
 # ---viết hoa chữ cái đầu và viết thường các chữ cái còn lại trong xâu
+# ---kiểm tra xâu đối xung
+def kiem_tra_doi_xung_2(s):
+  s = s.lower().replace(" ", "")
+  left = 0
+  right = len(s) - 1
+
+  while left < right:
+    if s[left] != s[right]:
+      return False  # Khác nhau thì không phải xâu đối xứng
+    left += 1
+    right -= 1
+
+  return True  # Duyệt hết mà không sai thì là xâu đối xứng
 # ---viết hoa chữ cái đầu và viết thường các chữ cái còn lại trong 
 def chuan_hoa_ten(ten: str) -> str:
     danh_sach_tu = ten.split()
