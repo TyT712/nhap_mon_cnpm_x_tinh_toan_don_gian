@@ -44,3 +44,10 @@ def kiem_tra_so_hoan_hao(n):
             
     # Nếu tổng các ước bằng chính n thì đó là số hoàn hảo
     return tong_uoc == n
+#chương trình chạy từ đây
+if __name__ == "__main__":
+    n = int(input("nhập n"))
+    print(f"tinh giai thua: {tinh_giai_thuaw(n)}")
+    print(f"kiem tra chẵn lẽ: {kiemtrachanle(n)}")
+    print(f"kiem tra nguyen tố: {nguyen_to(n)}")
+    print(f"kiem tra so hoàn hảo: {kiem_tra_so_hoan_hao: {kiem_tra_so_hoan_hao(n)}}")
